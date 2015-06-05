@@ -41,6 +41,11 @@ var findFiles = function(name, options, cb) {
 				if (matchesQuery(item.name)) {
 					matches.push({
 						name: item.name,
+						birthtime: item.birthtime,
+						atime: item.atime,
+						mtime: item.mtime,
+						ctime: item.ctime,
+						size: item.size,
 						filepath: path.join(root, item.name)
 					});
 				}
