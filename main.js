@@ -6,7 +6,7 @@ var fs = require('fs'),
 var findFiles = function(name, options, cb) {
 	if (!cb) {
 		cb = function(msg) {
-			console.log('Matching directories: ', msg);
+			//console.log('Matching directories: ', msg);
 		};
 	}
 
@@ -35,7 +35,7 @@ var findFiles = function(name, options, cb) {
 		if(skipDir) {
 			return;
 		}
-		console.log(root);
+		//console.log(root);
 		files.forEach(function(item) {
 			if(!requireExts || requireExts.indexOf(path.extname(item.name)) >= 0) {
 				if (matchesQuery(item.name)) {
