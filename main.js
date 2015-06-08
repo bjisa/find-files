@@ -56,7 +56,7 @@ var findFiles = function(name, options, cb) {
 
 	walker.once('end', function() {
 		if (matches.length === 0) {
-			console.log('no matches found');
+			//console.log('no matches found');
 		}
 		cb(matches);
 	});
